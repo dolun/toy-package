@@ -1,19 +1,21 @@
 ####
 import numpy as np
-import pylab as pl
 
-def get_array_shape(a)->tuple:
-    """return the shape of an array
+
+from typing import  List
+
+def get_array_shape(a)->int:
+    """return the sum of the shape of an array
 
     Args:
         a (ndarray): input array
     Returns:
         tuple: shape of the array
 
-    >>> get_array_shape(pl.randn(2,3,4))
-    (2, 3, 4)
+    >>> get_array_shape(np.random.randn(2,3,4))
+    9
     """
-    return a.shape
+    return sum(a.shape)
 
 def is_it_number(in_value):
     """Checks if a value is a valid number.
