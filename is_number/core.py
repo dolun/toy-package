@@ -1,5 +1,19 @@
 ####
+import numpy as np
+import pylab as pl
 
+def get_array_shape(a)->tuple:
+    """return the shape of an array
+
+    Args:
+        a (ndarray): input array
+    Returns:
+        tuple: shape of the array
+
+    >>> get_array_shape(pl.randn(2,3,4))
+    (2, 3, 4)
+    """
+    return a.shape
 
 def is_it_number(in_value):
     """Checks if a value is a valid number.
