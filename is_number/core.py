@@ -1,4 +1,4 @@
-
+####
 
 
 def is_it_number(in_value):
@@ -27,7 +27,7 @@ def is_it_number(in_value):
     >>> is_it_number("Hello")
     False
 
-    You can also pass more complex objects, these will all be ``False``.
+    You can also pass more complex objects, these will all be `False`.
 
     >>> is_it_number({"hello": "world"})
     False
